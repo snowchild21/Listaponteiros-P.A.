@@ -7,11 +7,11 @@
  II. A função funcao1(), no pior caso, é uma estratégia mais rápida do que a função funcao2().
  III. A função funcao2() implementa uma estratégia iterativa na concepção do algoritmo.
  É correto o que se afirma em:
- a. I, apenas.
+ a. I, apenas. - correto
  b. III, apenas.
  c. I e II, apenas.
  d. II e III, apenas.
- e. I, II e III.    -    correto
+ e. I, II e III.    
  Justifique sua resposta. */
 
 
@@ -46,11 +46,9 @@ int main() {
 	    v == vetor[m], e isso só irá acontecer, analogamente, quando m = 7 pois v 
 	    continua igual a 15. Portanto, funcao1 vai retornar i = 7 e funcao 2 ira 
 	    retornar m = 7. i = m = 7 - 7.
-	    II - sim, a funcao1 comparada a funcao2 é mais rapida, pois, ela realiza apenas
-	    um loop, já a funcao 2, depende do valor q m vai receber pra poder ser proxima
-	    ao algoritmo da funcao1, mas,mesmo assim, ainda realiza mais processos que a funcao1.
-	    III - sim, a funcao2 é uma estrategia iterativa, pois, o algoritmo dependendo do valor
-	    de m, torna-se um laço, que obedece aa 3 condições. No exemplo da questao, esse laço
-	    é repetidido 4 vezes, até q a condição v == vetor[m] seja true.*/
+	    II - incorreto, pois a funcao1 depende do TAM do vetor, realizando TAM vezes
+	    o laço. Já a 2, realizara vetor[m] = v vezes, e no caso da questão, 4 vezes.
+	    III - incorreto, a funcao2 não é iterativa, e sim, recursiva, pois a funcao2 nao usa laços
+	    para ser realizada, e sim, os proprios ifs e returns.*/
 	return 0;
 }
