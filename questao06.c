@@ -7,7 +7,7 @@ Justifique sua resposta*/
 
 void funcao(char **p){
   char *t;
-  t = (p += sizeof(int))[-1];
+  t = (p += sizeof(int))[-1]; // [-1] volta uma posição.
   printf("%s\n", t);
 }
 int main(){
