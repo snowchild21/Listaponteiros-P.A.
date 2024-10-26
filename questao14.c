@@ -21,7 +21,8 @@ void main() {
   na funcao ,antes de retornar os valores, o "a" é declarado como "a + 3", e como "a" era "c" que e
   igual a 5, ent "a" vale 8 localmente na funcao, e depois retorna a soma das 3 variaveis.*/ 
 /* em linhas gerais, c vai receber **ppc, que valia 6, depois b vai receber *pb, que vale 8, e depois
-a vai ser incrementado 3, mas por n ser ponteiro, isso não vai alterar o conteudo dele, então continuara sendo 8.
+a vai ser incrementado 3, mas por n ser ponteiro, a passagem foi feita por valor. Então, ele vai ser ainda 5,
+então após a incremetação, vai passar a ser 8.
 logo, o return vai ser (8 + 8 + 6) =  22.*/
   getchar();
   return 0;
